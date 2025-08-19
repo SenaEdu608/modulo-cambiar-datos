@@ -42,7 +42,7 @@ Forma parte de un sistema mayor y sigue principios de arquitectura en capas (fro
 
 ### 1. Clonar repositorio
 ```bash
-git clone https://github.com/Spiner007/modulo-cambiar-datos.git
+git clone  https://github.com/SenaEdu608/modulo-cambiar-datos.git
 cd modulo-cambiar-datos
 ```
 
