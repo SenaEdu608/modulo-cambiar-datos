@@ -1,0 +1,61 @@
+<!-- 
+  Página de edición de perfil de usuario con formulario para actualizar información personal.
+  Incluye:
+  - Sección para mostrar ID de usuario
+  - Campos para nombre, teléfono, email y dirección
+  - Sección opcional para cambiar contraseña (inicialmente oculta)
+  - Botones para actualizar datos y mostrar/ocultar sección de contraseña
+-->
+
+<h2 class="perfil-titulo">Editar Información</h2>
+
+<div id="perfil-form-container">
+  <p id="perfil-user-id">ID del Usuario: Cargando...</p>
+  
+  <form id="perfil-formulario">
+    <div class="perfil-form-row">
+      <div class="perfil-form-data">
+        <label for="perfil-nombre">Nombre</label>
+        <input type="text" id="perfil-nombre" placeholder="Nombre" required />
+      </div>
+      
+      <div class="perfil-form-data">
+        <label for="perfil-telefono">Teléfono</label>
+        <input type="tel" id="perfil-telefono" placeholder="Teléfono" required />
+      </div>
+    </div>
+    
+    <div class="perfil-form-row">
+      <div class="perfil-form-data">
+        <label for="perfil-email">Correo</label>
+        <input type="email" id="perfil-email" placeholder="TuCorreo@gmail.com" required />
+      </div>
+      
+      <div class="perfil-form-data">
+        <label for="perfil-direccion">Dirección + Barrio</label>
+        <input type="text" id="perfil-direccion" placeholder="Ejemplo Calle falsa 123, san lucas" required />
+      </div>
+    </div>
+    
+<!-- Contenedor de contraseña oculto inicialmente -->
+<div id="perfil-password-container" class="oculto">
+  <div class="perfil-form-row">
+    <div class="perfil-form-data">
+      <label for="perfil-password">Nueva Contraseña</label>
+      <input type="password" id="perfil-password" placeholder="Nueva Contraseña" />
+      <small class="password-hint">Mínimo 8 caracteres, con mayúscula, número y carácter especial</small>
+    </div>
+    
+    <div class="perfil-form-data">
+      <label for="perfil-confirmacion">Confirmar Contraseña</label>
+      <input type="password" id="perfil-confirmacion" placeholder="Confirmar Contraseña" />
+    </div>
+  </div>
+</div>
+    
+    <div class="perfil-button-container">
+      <button type="submit" class="perfil-btn">Actualizar</button>
+      <button type="button" id="perfil-toggle-password" class="perfil-btn-secundario">Cambiar Contraseña</button>
+    </div>
+  </form>
+</div>

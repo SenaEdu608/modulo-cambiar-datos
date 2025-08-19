@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bienvenido</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/frontend/css/deshboard-css/nav/nav.css"/>
+  <link rel="stylesheet" href="/frontend/css/deshboard-css/link-barra-tareas-css/cambiarDatos.css"/>
+</head>
+<body>
+  <header class="contenedor-navegacion">
+    <nav class="navegacion">
+      <a href="#" onclick="mostrarSeccion('principal')" class="peluqueria-text">Peluquería Denis</a>
+      <ul>
+        <li><a href="#" id="b-tarea" onclick="mostrarSeccion('cambiarDatos')">PERFIL</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="cambiarDatos" class="cambiarDatos"></section>
+
+
+  <script src="/frontend/js/deshboard-js/mostrar-deshboard/mostrarSecciones.js"></script>
+  <script src="/frontend/js/deshboard-js/link-barra-tareas-js/cambiarDatos.js"></script>
+  
+</body>
+</html>
